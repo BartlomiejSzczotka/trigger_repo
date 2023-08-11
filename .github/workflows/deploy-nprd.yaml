@@ -8,7 +8,7 @@ jobs:
   run-it:
     runs-on: ubuntu-latest
     steps:
-      - uses: convictional/trigger-workflow-and-wait
+      - uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
           owner: BartlomiejSzczotka
           repo: triggered_repo
