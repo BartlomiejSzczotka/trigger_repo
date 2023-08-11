@@ -8,11 +8,11 @@ jobs:
   run-it:
     runs-on: ubuntu-latest
     steps:
-      - uses: convictional/trigger-workflow-and-wait@v1.6.1
+      - uses: convictional/trigger-workflow-and-wait
         with:
           owner: BartlomiejSzczotka
           repo: triggered_repo
-          github_token: ${{ secrets.triger_my }}
+          github_token: ${{ secrets.TRIGER_MY }}
           workflow_file_name: run-it-test.yaml
           ref: main
 #          client_payload: '{"inputs.app": "STOCK_HOLD_ORCHESTRATOR"}'
