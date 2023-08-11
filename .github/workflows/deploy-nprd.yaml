@@ -6,8 +6,7 @@ on:
 
 jobs:
   run-it:
-    runs-on:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
