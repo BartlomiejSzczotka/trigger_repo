@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-          owner: sainsburys-tech
+          owner: BartlomiejSzczotka
           repo: argos-im-integration-test-dependencies
           github_token: ${{ secrets.im-test-dependency }}
           workflow_file_name: run-it-test.yaml
