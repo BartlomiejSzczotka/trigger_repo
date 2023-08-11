@@ -1,0 +1,20 @@
+name: Deploy BOT non prod
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-it:
+    runs-on:
+      - self-hosted
+      - build
+    steps:
+      - uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+          owner: sainsburys-tech
+          repo: argos-im-integration-test-dependencies
+          github_token: ${{ secrets.im-test-dependency }}
+          workflow_file_name: run-it-test.yaml
+          ref: master
+#          client_payload: '{"inputs.app": "STOCK_HOLD_ORCHESTRATOR"}'
